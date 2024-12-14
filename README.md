@@ -157,7 +157,7 @@ show ip ospf neighbour
 ```
 ![image](https://github.com/user-attachments/assets/d0ebf2b6-a0cd-451b-83f7-51fef591913a)
 
-###**Verify Network Connectivity in each router**
+### **Verify Network Connectivity in each router**
 - Ping R2 from PC1 in R1
 ```bash
 ping 192.168.10.2
