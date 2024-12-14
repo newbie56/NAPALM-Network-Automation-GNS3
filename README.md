@@ -142,7 +142,7 @@ python3 r3_conf.py
 
 ## ▶️**Verify Connection**
 
-###**Verify IP assignment and OSPF**
+### **Verify IP assignment and OSPF**
 
 Execute in EXEC mode
 - Use the following command to verify interface assignment:
