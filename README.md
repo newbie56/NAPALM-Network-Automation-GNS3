@@ -1,6 +1,6 @@
 # NAPALM-Network-Automation-GNS3
 
-## Setup the network topology**
+## **Setup the network topology**
 
 ![image](https://github.com/user-attachments/assets/59684dc2-8b8b-4db8-b569-5661ac901e4c)
 
@@ -49,7 +49,9 @@ Follow below addressing tables
 ## ⚙️**Configure interfaces connected to r1 to start pushing configuration using NAPALM from pc1**
 R1
 - **Basic Configuration**
+
   **APPLY TO ALL ROUTERS**
+  ```bash
   ip domain-lookup
   ip name-server 8.8.8.8
   ip domain-name cisco.com
@@ -60,6 +62,7 @@ R1
   login local
   exit
   ip scp server enable
+  ```
 
   **R1**
   ```bash
@@ -103,6 +106,7 @@ R1
 - **Configure pc1 network**  
   In this example, pc1 uses debian image in GNS3. To edit network configuration, head over to `/etc/network/interfaces`.  
   Username : debian
+
   Password: debian
   
   ```bash
