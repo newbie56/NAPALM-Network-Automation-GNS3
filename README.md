@@ -101,14 +101,17 @@ R1
   write memory
   ```
   #IMPORTANT!!
-  write memory command is very important for it to be successfully saved after pushing the config. Otherwise it will return error pattern not detected.
+  `write memory` command is very important for it to be successfully saved after pushing the config. Otherwise it will return `error pattern not detected.`
   
 - **Configure pc1 network**  
   In this example, pc1 uses debian image in GNS3. To edit network configuration, head over to `/etc/network/interfaces`.  
   Username : debian
-
   Password: debian
   
+  Depending on the linux distribution it can also be at other location,
+  Ubuntu 18.04+ = `/etc/netplan/*.yaml`
+  Red-Hat Distro = `/etc/NetworkManager/system-connections/<interface>.nmconnection` (with NetworkManager)
+  Arch-Linux = `/etc/systemd/network/*.network` (with systemd-networkd)
   ```bash
   sudo nano /etc/network/interfaces
   ```
@@ -144,7 +147,7 @@ python3 r3_conf.py
 
 ### **Verify IP assignment and OSPF**
 
-Execute in EXEC mode
+Execute in `EXEC` mode
 - Use the following command to verify interface assignment:
 ```bash
 show ip int brief
