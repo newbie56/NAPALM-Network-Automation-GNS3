@@ -105,18 +105,19 @@ R1
   
 - **Configure pc1 network**  
   In this example, pc1 uses debian image in GNS3. To edit network configuration, head over to `/etc/network/interfaces`.  
-  Username : debian
-
-  Password: debian
   
+  Username : debian
+  
+  Password: debian
+    
   Depending on the linux distribution it can also be at other location,
-
+  
   Ubuntu 18.04+ = `/etc/netplan/*.yaml`
-
+  
   Red-Hat Distro = `/etc/NetworkManager/system-connections/<interface>.nmconnection` (with NetworkManager)
-
+  
   Arch-Linux = `/etc/systemd/network/*.network` (with systemd-networkd)
-
+  
   ```bash
   sudo nano /etc/network/interfaces
   ```
